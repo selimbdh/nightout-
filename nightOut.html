@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nightOut-style.css">
+    <script src="jquery.js"></script>
+    <title>Nightout</title>
+</head>
+<body>
+    <header>
+        <a>
+        <h1 class="logo">Nightout</h1>
+        </a>
+        <nav>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a onclick="toprated(filters)">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="Restaurent.html" >Explore</a>
+                </li>
+                <li class="navbar-item">
+            
+                <li id="login">
+                    <a href="nighoutLogin.html">login/signUp</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="text" id="inputs" onchange="search(filters)">
+
+    </header>
+   
+   
+    <div id="slideshow">
+        <div class="slide-wrapper">
+             
+        <!-- Define each of the slides
+         and write the content -->
+          
+            <div class="slide">
+                <img class="slide-number" src="event_image-aeee9cef777f0e1ceb637282fe0a10e2.png" style="width:100%" style="height:100%">
+            
+            </div>
+            <div class="slide">
+                <img class="slide-number "src="event_image-acd0e95f3eed56e219497e483e68dff3.jpg" style="width:100%" style="height:100%">
+            </img>
+            </div>
+            <div class="slide">
+                <img class="slide-number" src="Atelier-Lyrique.png" style="width:100%" style="height:100%">
+            </div>
+            <div class="slide">
+                <img class="slide-number" src="event_image-574b4304d75c67d0bd23b04c3228fd3f.jpg" style="width:100%" style="height:100%">
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="all_cards"></div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+      </div>
+      
+
+
+    <script src="nightOut.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nightOut-style.css">
+    <script src="jquery.js"></script>
+    <title>Nightout</title>
+</head>
+<body>
+    <header>
+    <a>
+        <h1 class="logo">Nightout</h1>
+        </a>
+        <nav>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a onclick="toprated(filters)">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="Restaurent.html" >Explore</a>
+                </li>
+                <li class="navbar-item">
+            
+                <li id="login">
+                    <a href="nighoutLogin.html">login/signUp</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="text" id="inputs" onchange="search(filters)">
+
+    </header>
+    <div class="sidenav">
+        <a>places</a>
+    <ul class="optionss">
+        <li class="options" onclick="filtering(filters,'gammarth')">Gammarth</li>
+        <li class="options" onclick="filtering(filters,'sidi bou said')">Sidi bou said</li>
+        <li class="options" onclick="filtering(filters,'tunis')">Tunis</li>
+        <li class="options" onclick="filtering(filters,'hammamet')">Hammamet</li>
+        <li class="options" onclick="filtering(filters,'sousse')">Sousse</li>
+        <li class="options" onclick="filtering(filters,'djerba')">Djerba</li>
+    </ul>
+        <a>Types</a>
+        <ul class="optionss">
+            <li class="options" onclick="filtering(filters,'lounge')">Lounges</li>
+            <li class="options" onclick="filtering(filters,'restaurant')">Restaurants</li>
+            <li class="options" onclick="filtering(filters,'bar')">Bars</li>
+            <li class="options" onclick="filtering(filters,'event')">Events</li>
+        </ul>
+        <a>Alcohol</a>
+        <ul class="optionss">
+            <li class="options" onclick="filtering(filters,'yes')">YES</li>
+            <li class="options" onclick="filtering(filters,'no')">No</li>
+           
+        </ul>
+        <a>With who</a>
+        <ul class="optionss">
+            <li class="options" onclick="filtering(filters,'date')">Date</li>
+            <li class="options" onclick="filtering(filters,'friends')">Friends</li>
+            <li class="options" onclick="filtering(filters,'family')">Family</li>
+            
+        </ul>
+      </div>
+      <div id="all_cards"></div>
+    <script src="nightOut.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>

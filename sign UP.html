@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="nightOut-style.css">
+         <script src="jquery.js"></script>
+    <title>NightOut</title>
+</head>
+<body>
+    <form>
+        <h1>Sign Up</h1>
+        <p>
+            <label for="login">Username or email</label>
+            <input type="text" name="login" id="logs" placeholder="john.doe@gmail.com" autocomplete="off" required>
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name='password' id="pass" placeholder="The longer the better" required> 
+        </p>
+     
+        <p>
+            <button type="button" onclick="Sign_up(document.getElementById('logs').value,document.getElementById('pass').value,login_url)">Continue</button>
+            <a href="nighoutLogin.html"><button type="button" > Login</button></a>
+        </p>       
+    </form>
+    <div id="log_err"></div>
+    <script src="function.js"></script>
+</body>
+</html>
